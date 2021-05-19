@@ -155,6 +155,9 @@ if(!args[0]) return message.reply("Add meg a zene címét!")
     }
 });
 
+bot.login(process.env.BOT_TOKEN);
+
+
 
 // Queue status template
 const status = (queue) => `Hangerő: \`${queue.volume}%\` | Filter: \`${queue.filter || "Off"}\` | Ismétlés: \`${queue.repeatMode ? queue.repeatMode == 2 ? "All Queue" : "Ez a Zene:" : "Off"}\` | Automatikus Zene lejátszás: \`${queue.autoplay ? "On" : "Off"}\``;
