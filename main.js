@@ -3,7 +3,6 @@ console.log("One second to start!")
 
 const botconfig2 = require("./botconfig.json")
 const prefix = botconfig2.prefix;
-const tokenfile = require("./tokenfile.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEverynone: true, partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const DisTube = require("distube");
